@@ -1,0 +1,300 @@
+/* Geral */
+*,
+html,
+body {
+  font-family: "Geist Mono", monospace;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b0a1a;
+  background-image: url(img/fundo.png);
+  background-repeat: repeat;
+  background-position: center;
+  color: #fff;
+  background-size: 120px;
+}
+
+/* Barra de Navegação */
+#navegacao {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  background-color: #16142b;
+}
+
+#barraNavegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0 30px;
+}
+
+#barraNavegacao a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "JetBrains Mono", monospace;
+  color: #ffffff;
+  transition: 0.8s;
+}
+
+#barraNavegacao a:hover {
+  text-decoration: underline;
+  font-size: 21px;
+}
+
+/* Banner */
+#inicio {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 0;
+}
+
+#fotoPerfil {
+  height: 300px;
+  border-radius: 20%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#nomeCompleto {
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "JetBrains Mono", monospace;
+  color: #ff4fb3;
+}
+
+#focosAprendizado {
+  font-size: 23px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: bold;
+  color: #8bec29;
+}
+
+#texto1 {
+  font-size: 20px;
+  line-height: 120%;
+}
+
+#sobre {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.informacoes {
+  height: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nomeFoco {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icones {
+  width: 50px;
+  display: inline-block;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-right: 8px;
+  transition: 0.2s;
+}
+
+.icones:hover{
+  transform: scale(0.8);
+}
+
+/* Container do site */
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 8px auto;
+  padding: 30px;
+  background-color: #0e0d20;
+}
+
+/* Titulo das partes do site (tecnologia, projetos e contato) */
+.tituloParte {
+  display: flex;
+  justify-content: center;
+  font-family: "JetBrains Mono", monospace;
+  line-height: 35px;
+  font-size: 23px;
+  color: #ff4fb3;
+  font-weight: bold;
+}
+
+/* Título do tipo da tecnologia */
+.tituloTecnologia {
+  font-family: "Space Grotesk", sans-serif;
+  color: #8bec29;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+/* Subtitulo das tecnologias back-end */
+.subtituloBack {
+  color: #fffc31;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+/* tecnologias */
+#tecnologias {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  line-height: 50px;
+}
+
+.tecnologias {
+  display: inline-block;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.iconeTec {
+  height: 90px;
+  display: inline-block;
+  flex-direction: row;
+  margin-top: 15px;
+  margin-right: 10px;
+  transition: 0.8s;
+}
+
+.iconeTec:hover{
+  transform: scale(1.4);
+  /* filter: drop-shadow(0 0 5px #73ee7f); */
+}
+
+.tecnologiasBibli {
+  display: inline-block;
+  flex-direction: column;
+  line-height: 35px;
+  margin-right: 5px;
+}
+
+/* Formulario */
+#formularioContato {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contatoTitulo {
+  align-items: center;
+}
+
+/* Linha nome da empresa - email */
+.linha {
+  display: flex;
+  gap: 20px;
+}
+
+/* campo empresa - email */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#nomeEmpresa,
+#emailEm {
+  width: 498px;
+}
+
+#assuntoArea {
+  width: 1020px;
+}
+
+/* Areas de digitação */
+.areas {
+  background-color: #191738;
+  border-color: #191738;
+  border: transparent;
+  width: 250px;
+  height: 30px;
+  color: #ffffff;
+  text-indent: 5px;
+}
+
+#mensagemEn {
+  height: 150px;
+  width: 1020px;
+  line-height: 25px;
+}
+
+/* Botao enviar */
+#botao {
+  display: flex;
+  justify-content: center;
+}
+
+#botaoEnviar {
+  width: 150px;
+  height: 40px;
+  background-color: #191738;
+  border-color: transparent;
+  color: #8bec29;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Rodape */
+#rodape {
+  width: 100%;
+  padding: 30px 0;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  background-color: #131125;
+  border-top: 1px solid #070051;
+}
+
+#linksRodape {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+#linksRodape a{
+  text-decoration: none;
+  color: #4b4f74;
+  transition: 0.5s;
+}
+
+#linksRodape a:hover {
+  color: #5c6cff;
+}
+
+#final {
+  display: flex;
+  justify-content: center;
+}
+
+#final p {
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 1023px) {
+  #inicio {
+    flex-direction: column;
+  }
+}
