@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="src/img/favicon.ico">
     <link rel="stylesheet" href="src/reset.css" />
     <link rel="stylesheet" href="src/style.css" />
     <title>Portfólio | Isis Lorca</title>
@@ -28,7 +29,7 @@
   <body>
     <header id="navegacao">
       <nav id="barraNavegacao">
-        <a href="#inicio">Inicio</a>
+        <a href="#inicio">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#tecnologias">Tecnologias</a>
         <a href="#projetos">Projetos</a>
@@ -46,7 +47,7 @@
           <h1 id="nomeCompleto">> Isis Lorca de Oliveira</h1>
 
           <h2 id="focosAprendizado">
-            Desenvolvedora Back-End • IA • Desenvolvimento Web
+            Desenvolvedora Back-End • IA • Desenvolvedora Web
           </h2>
         </div>
 
@@ -86,16 +87,16 @@
     <main id="principal">
       <section id="sobre" class="container">
         <p>
-          Formada em Análise e Desenvolvimento de Sistemas pela Estácio de Sá e
-          graduação em andamento em Desenvolvimento de Sistemas Multiplataforma
-          pela Fatec de Marília.
+          Formada em Análise e Desenvolvimento de Sistemas pela Universidade
+          Estácio de Sá e graduanda em Desenvolvimento de Sistemas
+          Multiplataforma pela Fatec Marília.
         </p>
         <br />
         <p>
-          Tenho interesse na área de desenvolvimento Back-End, nas linguagens de
-          programação Java e Python, com pretensão em fazer especialização no
-          desenvolvimento de Inteligências Artificiais. Apesar de não ter foco
-          nessa área, tenho conhecimento na área de Desenvolvimento Web.
+          Tenho interesse na área de desenvolvimento Back-End e nas linguagens
+          de programação Java e Python, com pretensão em fazer especialização no
+          desenvolvimento de inteligências artificiais. Por conta de minha
+          primeira graduação, também possuo conhecimento de Desenvolvimento Web.
         </p>
       </section>
       <section id="tecnologias" class="container">
@@ -211,58 +212,105 @@
         </section>
       </section>
       <section id="projetos" class="container">
-        <!-- Descobrir como fazer -->
         <h3 class="tituloParte">Projetos:</h3>
+        <div class="listaProjeto">
+          <div class="areaProjeto">
+            <a href="https://github.com/Is-Lorca/Java-Alarm-Clock">
+              <h4 class="nomeProjeto">Java Alarm Clock</h4>
+              <p class="textoProjeto">
+                Relógio de alarme, além de alarme por dia e hora, também possui timer e pomodoro (com opções de pomodoro padrão rápido, normal e longo).
+              </p>
+              <p class="tipoLinguagemProjeto">
+                <span class="linguagemProjeto">Linguagem:</span> Java
+              </p>
+            </a>
+          </div>
+          <div class="areaProjeto">
+            <a href="https://github.com/Is-Lorca/Java-Hangman-Game">
+              <h4 class="nomeProjeto">Java Hangman Game</h4>
+              <p class="textoProjeto">
+                Jogo da forca.
+              </p>
+              <p class="tipoLinguagemProjeto">
+                <span class="linguagemProjeto">Linguagem:</span> Java
+              </p>
+            </a>
+          </div>
+          <div class="areaProjeto">
+            <a href="https://github.com/Is-Lorca/Java-Music-Player">
+              <h4 class="nomeProjeto">Java Music Player</h4>
+              <p class="textoProjeto">
+                Player de música com recursos de play, pausa, reiniciar e sair.
+              </p>
+              <p class="tipoLinguagemProjeto">
+                <span class="linguagemProjeto">Linguagem:</span> Java
+              </p>
+            </a>
+          </div>
+          <div class="areaProjeto">
+            <a href="https://github.com/Is-Lorca/Java-Slot-Machine">
+              <h4 class="nomeProjeto">Java Slot Machine</h4>
+              <p class="textoProjeto">
+                Simulador de máquina caça níquel.
+              </p>
+              <p class="tipoLinguagemProjeto">
+                <span class="linguagemProjeto">Linguagem:</span> Java
+              </p>
+            </a>
+          </div>
+        </div>
       </section>
-      <section id="contato" class="container">
-        <h3 class="tituloParte">Contato:</h3>
-        <br />
-        <form id="formularioContato" action="">
-          <div class="linha">
-            <div class="campo">
-              <label for="nomeEmpresa">Empresa:</label>
-              <input
-                type="text"
-                name="nomeEmpresa"
-                id="nomeEmpresa"
-                class="areas"
-                required
-              />
+      <!-- 
+        <section id="contato" class="container">
+          <h3 class="tituloParte">Contato:</h3>
+          <br />
+          <form id="formularioContato" action="">
+            <div class="linha">
+              <div class="campo">
+                <label for="nomeEmpresa">Empresa:</label>
+                <input
+                  type="text"
+                  name="nomeEmpresa"
+                  id="nomeEmpresa"
+                  class="areas"
+                  required
+                />
+              </div>
+              <div class="campo">
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="emailEm"
+                  class="areas"
+                  required
+                />
+              </div>
             </div>
             <div class="campo">
-              <label for="email">E-mail:</label>
-              <input
-                type="email"
-                name="email"
-                id="emailEm"
+              <label for="assunto">Assunto:</label>
+              <input id="assuntoArea" name="assunto" type="text" class="areas" />
+            </div>
+            <div class="campo">
+              <label for="mensagem">Mensagem:</label>
+              <textarea
+                name="mensagem"
+                id="mensagemEn"
                 class="areas"
                 required
-              />
+              ></textarea
+              ><br />
             </div>
-          </div>
-          <div class="campo">
-            <label for="assunto">Assunto:</label>
-            <input id="assuntoArea" name="assunto" type="text" class="areas" />
-          </div>
-          <div class="campo">
-            <label for="mensagem">Mensagem:</label>
-            <textarea
-              name="mensagem"
-              id="mensagemEn"
-              class="areas"
-              required
-            ></textarea
-            ><br />
-          </div>
-          <div id="botao">
-            <button id="botaoEnviar" type="submit">Enviar</button>
-          </div>
-        </form>
-      </section>
+            <div id="botao">
+              <button id="botaoEnviar" type="submit">Enviar</button>
+            </div>
+          </form>
+        </section>
+      -->
     </main>
     <footer id="rodape">
       <section id="linksRodape">
-        <a href="#inicio">Inicio</a>
+        <a href="#inicio">Início</a>
         <a href="#sobre">Sobre</a>
         <a href="#tecnologias">Tecnologias</a>
         <a href="#projetos">Projetos</a>

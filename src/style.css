@@ -115,7 +115,7 @@ body {
   transition: 0.2s;
 }
 
-.icones:hover{
+.icones:hover {
   transform: scale(0.8);
 }
 
@@ -179,7 +179,7 @@ body {
   transition: 0.8s;
 }
 
-.iconeTec:hover{
+.iconeTec:hover {
   transform: scale(1.4);
   /* filter: drop-shadow(0 0 5px #73ee7f); */
 }
@@ -192,6 +192,7 @@ body {
 }
 
 /* Formulario */
+
 #formularioContato {
   display: flex;
   flex-direction: column;
@@ -257,11 +258,60 @@ body {
   font-size: 16px;
 }
 
+/* Projetos */
+.listaProjeto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px 0;
+  margin-top: 16px;
+}
+
+.areaProjeto {
+  width: 100%;
+  max-width: 220px;
+  padding: 8px;
+  background-color: #191738;
+  line-height: 25px;
+}
+
+.areaProjeto a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.nomeProjeto {
+  font-family: "Space Grotesk", sans-serif;
+  color: #8bec29;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.textoProjeto {
+  color: #fff;
+  text-align: justify;
+}
+
+.tipoLinguagemProjeto {
+  color: #fff;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.linguagemProjeto {
+  color: #fffc31;
+  font-weight: bold;
+}
+
+
 /* Rodape */
 #rodape {
   width: 100%;
   padding: 30px 0;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 6px 0 rgba(0, 0, 0, 0.502);
   background-color: #131125;
   border-top: 1px solid #070051;
 }
@@ -273,7 +323,7 @@ body {
   margin-bottom: 40px;
 }
 
-#linksRodape a{
+#linksRodape a {
   text-decoration: none;
   color: #4b4f74;
   transition: 0.5s;
@@ -296,5 +346,8 @@ body {
 @media (max-width: 1023px) {
   #inicio {
     flex-direction: column;
+  }
+  .areaProjeto{
+    max-width: 100%;
   }
 }
