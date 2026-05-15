@@ -52,6 +52,11 @@ body {
   font-size: 21px;
 }
 
+#barraNavegacao a.active {
+  text-decoration: underline;
+  font-size: 21px;
+}
+
 /* Banner */
 #inicio {
   display: flex;
@@ -267,6 +272,10 @@ body {
   margin-top: 16px;
 }
 
+.linkProjeto {
+  text-decoration: none;
+}
+
 .areaProjeto {
   width: 100%;
   max-width: 220px;
@@ -304,6 +313,7 @@ body {
 .linguagemProjeto {
   color: #fffc31;
   font-weight: bold;
+  font-style: normal;
 }
 
 
